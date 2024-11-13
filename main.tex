@@ -1,0 +1,67 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{bibentry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[portuguese]{babel}
+\usepackage{comment}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+
+
+\setbeamertemplate{caption}[numbered]
+\usetheme{metropolis}
+
+% \setbeamercolor{frametitle}{fg=white}
+% \setbeamercolor{background canvas}{bg=black!90}
+% \setbeamercolor{normal text}{fg=white}
+
+\setbeamercolor{normal text}{fg=white,bg=black!80}
+\setbeamercolor{structure}{fg=white}
+
+% \setbeamercolor{alerted text}{fg=red!85!black}
+
+\setbeamercolor{item projected}{use=item,fg=black,bg=item.fg!35}
+
+\setbeamercolor*{palette primary}{use=structure,fg=structure.fg}
+\setbeamercolor*{palette secondary}{use=structure,fg=structure.fg!95!black}
+\setbeamercolor*{palette tertiary}{use=structure,fg=structure.fg!90!black}
+\setbeamercolor*{palette quaternary}{use=structure,fg=structure.fg!95!black,bg=black!80}
+
+\setbeamercolor*{framesubtitle}{fg=white}
+
+\setbeamercolor*{block title}{parent=structure,bg=black!60}
+\setbeamercolor*{block body}{fg=black,bg=black!10}
+\setbeamercolor*{block title alerted}{parent=alerted text,bg=black!15}
+\setbeamercolor*{block title example}{parent=example text,bg=black!15}
+
+\definecolor{vim-green}{rgb}{0.004, 0.596, 0.200}
+% \colorlet{beamer@blendedblue}{green!40!black}
+
+\newenvironment{wideitemize}{\itemize\addtolength{\itemsep}{2em}}{\enditemize}
+\newenvironment{widedescription}{\description\addtolength{\itemsep}{2em}}{\enddescription}
+\newcommand{\key}[1]{\colorbox{lightgray}{\textbf{#1}}}
+\newcommand{\sk}[1]{\textless #1\textgreater}
+\newcommand{\bk}[1]{\{#1\}}
+
+%Information to be included in the title page:
+\title{Movimentos sindicais}
+\author{André William Régis $^{19200411}$ \\
+	\and Julien Hervot de Mattos Vaz $^{19202276}$ \\
+	\and Samara Batista Dayoub $^{23250557}$ \\
+}
+\institute{UFSC}
+% \date{\the\year}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\include{Content/Introduction}
+
+\end{document}
